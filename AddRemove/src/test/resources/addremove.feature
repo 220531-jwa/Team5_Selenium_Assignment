@@ -19,88 +19,64 @@
 @tag
 Feature: Add/Remove Items
 	Background: 
-		Given The user is logged in
+		Given The user is on the products page
 
 	  @tag1
 	  Scenario: One
-	    When an Item is added to the cart
-	    And
-	    When Item is removed with the Remove button
+	    When an Item is added to the cart and then removed with the Remove button
 	    Then the Item is successfully removed and the Add button shows
 	
 	  @tag2
 	  Scenario: Two
-	  	When an Item is added to the cart
-	    And
-	    When Item is removed with the Reset App State button
+	  	When an Item is added to the cart and then removed with the Reset App State button
 	    Then the Item is successfully removed but the Remove button still shows
 	  
 	  @tag3
 	  Scenario: Three
-	  	When multiple Items are added to the cart
-	    And
-	    When Items are removed with the Remove button
+	  	When multiple Items are added to the cart and then removed with the Remove button
 	    Then the Items are successfully removed and the Add button shows
 	  
 	  @tag4
 	  Scenario: Four
-	 		When multiple Items are added to the cart
-	    And
-	    When Items are removed with the Reset App State button
+	 		When multiple Items are added to the cart and then removed with the Reset App State button
 	    Then the Items are successfully removed but the Remove button still shows
 	  
 	  @tag5
 	  Scenario: Five
-	  	When multiple Items are added to the cart
-	    And
-	    When some Items are removed with the Remove button and some Items are removed with the Reset App State button
+	  	When multiple Items are added to the cart and then some Items are removed with the Remove button and some Items are removed with the Reset App State button
 	    Then the Items are successfully removed but the Remove button still shows for Items removed with the Reset App State Button
 	  
 	  @tag6
 	  Scenario: Six
-	  	When an Item is added to the cart
-	    And
-	    When Item is removed with the Remove button and then the Reset App State button is clicked and then the item is added again
+	  	When an Item is added to the cart and then removed with the Remove button and then the Reset App State button is clicked and then the item is added again
 	    Then the Item is succesfully added back to cart
 	
 	  @tag7
 	  Scenario: Seven
-	  	When an Item is added to the cart
-	    And
-	    When Item is removed with the Remove button and then the Reset App State button is clicked and then the item is added and removed again with Remove button
+	  	When an Item is added to the cart and then removed with the Remove button and then the Reset App State button is clicked and then the item is added and removed again with Remove button
 	    Then the Item is succesfully added and removed again
 	  
 	  @tag8
 	  Scenario: Eight
-	  	When multiple Items are added to the cart
-	    And
-	    When Items are removed with the Remove button and then the Reset App State button is clicked and then the items are added again
+	  	When multiple Items are added to the cart and then removed with the Remove button and then the Reset App State button is clicked and then the items are added again
 	    Then the Items are succesfully added back to cart
 	  
 	  @tag9
 	  Scenario: Nine
-	  	When multiple Items are added to the cart
-	    And
-	    When Items are removed with the Remove button and then the Reset App State button is clicked and then the items are added and removed again with Remove button
+	  	When multiple Items are added to the cart and then removed with the Remove button and then the Reset App State button is clicked and then the items are added and removed again with Remove button
 	    Then the Items are succesfully added and removed
 	  
 	  @tag10
 	  Scenario: Ten
-	  	When multiple Items are added to the cart
-	    And
-	    When Items are removed with the Remove button and then the Reset App State button is clicked and then the items are added and removed again with Reset App State button
+	  	When multiple Items are added to the cart and then removed with the Remove button and then the Reset App State button is clicked and then the items are added and removed again with Reset App State button
 	    Then the Items are added and removed from cart but Remove buttons still show
 	  
 	  @tag11
 	  Scenario: Eleven
-	  	When multiple Items are added to the cart
-	    And
-	    When Items are removed with the Remove button and then the Reset App State button is clicked and then the items are added and removed again with Reset App State button and then added and removed with the Remove button
+	  	When multiple Items are added to the cart and then removed with the Remove button and then the Reset App State button is clicked and then the items are added and removed again with Reset App State button and then added and removed with the Remove button
 	    Then the Items are added and removed from cart but Remove buttons still show
 	  
 	  @tag12
 	  Scenario: Twelve
-	  	When an Item is added to cart
-	  	And
-	  	When the item is removed with the Remove button, then added and removed again with the Remove button
+	  	When an Item is added to cart and then removed with the Remove button, then added and removed again with the Remove button
 	  	Then the Item is succesfully added and removed both times
