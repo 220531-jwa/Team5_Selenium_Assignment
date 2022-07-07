@@ -1,0 +1,17 @@
+- Test_Sort_01
+    - Test Objective
+        - Website correctly sorts from dropdown
+    - Preconditions
+        - User is logged in
+        - User is at [https://www.saucedemo.com/inventory.html](https://www.saucedemo.com/inventory.html)
+    - Steps
+        - User opens sorting dropdown
+        - User selects one of four options
+    - Test Data
+        - N/A
+    - Expected Result
+        - Items are displayed in expected order
+    - Post-Conditions
+        - N/A
+    - Assigned Tester: TC Prater
+    - Status: Written, Passed
