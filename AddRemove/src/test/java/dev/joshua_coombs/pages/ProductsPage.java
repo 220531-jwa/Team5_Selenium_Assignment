@@ -13,6 +13,9 @@ public class ProductsPage {
 		PageFactory.initElements(realHumanBeing, this);
 	}
 	
+	@FindBy(id = "react-burger-menu-btn")
+	public WebElement options;
+	
 	@FindBy(id = "reset_sidebar_link")
 	public WebElement resetAppState;
 	
